@@ -1,0 +1,20 @@
+$floor_height:434px;
+.index{
+  .contain{
+    background-color:$bgcolor;
+    .container{
+      .row{
+        margin: 0px;
+      }
+      width: 85%;
+      ul{
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+
+	@import "floor.scss";
+	@import "course.scss";
+	@import "courses-all.scss";
+    }
+  }
+}

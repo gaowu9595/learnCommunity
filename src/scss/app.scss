@@ -1,0 +1,18 @@
+@charset "utf-8";
+//Variables
+@import "variable.scss";
+
+//Common
+@import "bootstrap/bootstrap.scss";
+@import "font-awesome/font-awesome.scss";
+
+//Index
+//@import "index/index.scss";
+@import "index/indexFull.scss";
+
+//Course
+@import "course/course.scss";
+
+
+//User-change
+@import "user/user.scss";

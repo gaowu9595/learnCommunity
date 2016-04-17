@@ -1,0 +1,42 @@
+.course {
+        margin-top: 10px;
+        padding: 10px;
+        width:100%;
+        background-color: white;
+        border: 2px solid $border_color;
+        .img-left {
+          padding-top: 10px;
+          img{
+            height: 302px;
+          }
+          p {
+            position: absolute;
+            top: 60%;
+            margin: 0 20px;
+            font-size: 25px;
+            font-weight: bold;
+          }
+          .addon{
+            position: absolute;
+            top:0;
+            right:0;
+            z-index:99;
+            color: $deep_red;
+          }
+        }
+        .img-right {
+          .img-right-small {
+            padding: 10px;
+            img{
+              height: 140px;
+            }
+            p {
+              position: absolute;
+              top: 60%;
+              margin: 0 20px;
+              font-size: 14px;
+              font-weight: bold;
+            }
+          }
+        }
+      }

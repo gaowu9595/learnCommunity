@@ -1,0 +1,15 @@
+body{
+  background-color: $bgcolor;
+  font-size: 15px;
+  a{
+    text-decoration: none;
+    //color:lighten(black,lightblue)
+    color: #727272;
+  }
+  ul{
+    list-style: none;
+  }
+}
+@mixin trans {
+  transition-duration:0.5s;
+}

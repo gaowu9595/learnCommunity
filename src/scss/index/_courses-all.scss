@@ -1,0 +1,198 @@
+.courses-all{
+        .courses {
+          background-color: white;
+          border: 2px solid rgb(219, 219, 219);
+          margin-top: 10px;
+
+          .header{
+            .title{
+              padding: 3px  10px;
+              margin: 10px 10px 20px 0px ;
+              font-weight: bold;
+              border-left: $blue 10px solid;
+              font-size: 19px;
+            }
+            .head-list{
+              line-height: 55px;
+            }
+            .more{
+              font-size: 12px;
+              padding: 14px  10px;
+              a{
+                text-decoration: none;
+                &:hover{
+                  @include trans;
+                  color: $blue;
+                }
+              }
+            }
+          }
+
+          .body{
+            margin: 10px 0 40px 0;
+            img{
+              margin: 10px 20px;
+            }
+            .info{
+              .title{
+                color: $grey5;
+                margin: 50px 20px 20px 20px ;
+                //line-height: 130px;
+                font-size: 17px;
+                font-weight: bold;
+                overflow: hidden;
+                white-space: nowrap; //文本不换行
+                text-overflow: ellipsis;;
+              }
+              .addon{
+                color: $grey2;
+                margin: 20px;
+                .time{
+                  float: left;
+                }
+                .people{
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+
+        .recommend-all{
+          .recommend{
+            margin-top: 10px;
+            border: 2px solid $border_color;
+            background-color: white;
+            margin-left: 10px;
+            height: 370px;
+            .title{
+              padding: 3px  10px;
+              margin: 10px 10px 20px 0px ;
+              font-weight: bold;
+              border-left: $blue 10px solid;
+              font-size: 19px;
+            }
+            .article{
+              margin-right: 40px;
+              li{
+                margin: 5px;
+                a{
+                  &:hover{
+                    text-decoration: none;
+                    color:$orange;
+                    //color: rgb(255,117,0);
+                    transition-duration: 0.5s;
+                  }
+                }
+              }
+
+            }
+
+            @mixin recommend-addon($color:$blue){
+              margin: 0px 10px 10px 20px ;
+              float: left;
+              font-weight: 500;
+              font-size: 20px;
+              padding: 10px 25px;
+              background-color: $color;
+              color: white;
+              cursor: pointer;
+              &:hover{
+                opacity: 0.7;
+              }
+            }
+            .recommend-body{
+              padding-left: 1px;
+              .free-all{
+                margin-bottom: 10px;
+                .free{
+                  @include recommend-addon($blue);
+                }
+              }
+              .good-all{
+                margin-bottom: 10px;
+                .good{
+                  @include recommend-addon($green);
+                }
+              }
+              .fire-all{
+                margin-bottom: 10px;
+                .fire{
+                  @include recommend-addon($red);
+                }
+              }
+            }
+
+
+          }
+
+          .recommend-2{
+            margin: 10px 0px 10px 10px;
+            border: 2px solid $border_color;
+            background-color: white;
+            height: 300px;
+            a{
+              text-decoration: none;
+              &:hover{
+                color: $orange;
+                transition-duration: 0.5s;
+              }
+            }
+            .title{
+              ul{
+                li{
+                  float: left;
+                  padding-top: 10px;
+                  //padding-bottom: 10px;
+                  font-size: 19px;
+                  text-align: center;
+                  width: 50%;
+                  border-left: 2px solid $grey1;
+                  border-bottom: 3px solid $grey1;
+                  cursor: pointer;
+                  &:hover{
+                    border-bottom: 3px solid $red;
+                  }
+                }
+              }
+              .recommend-title-active{
+                border-bottom: 3px solid $red;
+              }
+            }
+
+            @mixin recommend-list{
+              font-size: 15px;
+              li{
+                &:first-child{
+                  margin-top: 10px;
+                }
+                padding: 10px 20px ;
+                width: 270px;
+                overflow: hidden;
+                white-space: nowrap;    //文本不换行
+                text-overflow: ellipsis;
+
+                &:hover{
+                  transition-duration: 0.5s;
+                  text-decoration: none;
+                  color: $orange;
+                  border-left: 10px solid $green;
+                }
+              }
+              .more{
+                margin: 10px;
+              }
+            }
+            .list-article{
+              @include recommend-list;
+            }
+            .list-plan{
+              @include recommend-list;
+              display: none;
+            }
+
+
+          }
+        }
+
+      }

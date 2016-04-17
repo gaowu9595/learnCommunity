@@ -1,0 +1,121 @@
+.course {
+  width: 85%; }
+  .course .breadcrumb-main .breadcrumb {
+    background-color: white; }
+  .course .select-menu {
+    color: white; }
+    .course .select-menu .select {
+      background-color: white;
+      padding: 5px 10px;
+      border: #ddd 1px solid;
+      border-radius: 4px;
+      font-size: 12px; }
+      .course .select-menu .select li {
+        list-style: none;
+        padding: 10px 0 5px 100px; }
+      .course .select-menu .select .select-list {
+        border-bottom: #eee 1px dashed; }
+      .course .select-menu .select dl {
+        zoom: 1;
+        position: relative;
+        margin-bottom: 10px; }
+        .course .select-menu .select dl:after {
+          content: " ";
+          display: block;
+          clear: both;
+          height: 0;
+          overflow: hidden; }
+        .course .select-menu .select dl dt {
+          width: 100px;
+          margin-bottom: 5px;
+          position: absolute;
+          top: 0;
+          left: -100px;
+          text-align: right;
+          color: #666;
+          height: 24px;
+          line-height: 24px; }
+        .course .select-menu .select dl dd {
+          line-height: 24px;
+          float: left;
+          display: inline;
+          margin: 0 0 5px 5px; }
+          .course .select-menu .select dl dd a {
+            display: inline-block;
+            white-space: nowrap;
+            height: 24px;
+            padding: 0 10px;
+            text-decoration: none;
+            border-radius: 2px; }
+            .course .select-menu .select dl dd a:hover {
+              color: white;
+              background-color: #2ecc71; }
+      .course .select-menu .select .selected a {
+        color: #fff;
+        background-color: #2ecc71; }
+    .course .select-menu .select-result dt {
+      font-weight: bold; }
+    .course .select-menu .select-result .select-no {
+      color: #999; }
+    .course .select-menu .select .select-result a {
+      padding-right: 20px;
+      background: #2ecc71 url("../images/close.gif") right 9px no-repeat; }
+      .course .select-menu .select .select-result a:hover {
+        background-position: right -15px; }
+  .course .course-body {
+    background-color: white; }
+    .course .course-body .courses-sort {
+      padding: 10px;
+      font-size: 12px;
+      color: #95a5a6;
+      margin-left: 10px; }
+      .course .course-body .courses-sort li {
+        cursor: pointer;
+        border-width: 1px;
+        padding: 5px;
+        border-radius: 3px; }
+        .course .course-body .courses-sort li:hover {
+          border-width: 1px;
+          background-color: #2ecc71;
+          color: white; }
+    .course .course-body .floor ul {
+      margin-left: 23px;
+      padding-left: 0px; }
+      .course .course-body .floor ul li {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: 3px solid #eee;
+        color: #bbbbbb;
+        font-size: 12px;
+        width: 250px; }
+        .course .course-body .floor ul li:hover {
+          transition-duration: 0.5s;
+          border: 3px solid #2ecc71; }
+        .course .course-body .floor ul li div {
+          margin: 10px 15px; }
+        .course .course-body .floor ul li .image {
+          overflow: hidden; }
+          .course .course-body .floor ul li .image img {
+            cursor: pointer;
+            transform-origin: center;
+            width: 210px;
+            height: 160px;
+            transition-duration: 1s; }
+            .course .course-body .floor ul li .image img:hover {
+              transform: scale(1.2); }
+        .course .course-body .floor ul li .title {
+          color: black;
+          font-size: 14px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+        .course .course-body .floor ul li .price {
+          font-size: 17px;
+          color: #f88f55; }
+        .course .course-body .floor ul li .line {
+          margin: auto;
+          width: 85%;
+          border-top: 2px #bbbbbb solid; }
+        .course .course-body .floor ul li .src {
+          padding-top: 5px; }

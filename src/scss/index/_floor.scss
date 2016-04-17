@@ -1,0 +1,93 @@
+ .floor{
+        margin-top: 20px;
+        .all-list{
+          background-color: $contain;
+          padding-left: 0px;
+          height: $floor_height;
+          padding-right: 0px;
+          border-top: 5px solid $blue;
+          .list-sky{
+            padding: 10px  20px;
+            font-weight: bold;
+            background-color: $blue;
+            color: white;
+            font-size: 19px;
+          }
+          .list-head{
+            padding: 5px 20px;
+            margin-right: 0px;
+            font-size: 16px;
+            &:hover{
+              border-left: 7px solid $green;
+            }
+            a{
+              text-decoration: none;
+            }
+            .list-menu{
+              width: 645px;
+              background-color: whitesmoke;
+              z-index: 3;
+              display: none;
+              position: absolute;
+              top: -5px;
+              margin-left: 276px;
+              //width: 300px;
+              height: $floor_height;
+              .list-floor{
+                .floor-head{
+                  font-size: 16px;
+                  margin: 5px 10px;
+                }
+                .floor-menu{
+                  margin:5px 10px;
+                  .entry{
+                    font-size: 13px;
+                    //margin: 5px 5px;
+                    padding: -5px;
+                    border-right: 2px solid #BDC3C7;
+                    //border-right-width: 10px;
+                  }
+                  li{
+                    @include trans;
+                    &:hover{
+                      color:$green;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .tabimg{
+          margin-right: 0px;
+          padding-right: 0px;
+          height: $floor_height;
+          .list-inline{
+            background-color: rgb(107, 107, 107);
+            font-weight: bold;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            .head{
+              padding: 13px 20px;
+              color: white;
+              font-size: 17px;
+              &:hover{
+                @include trans;
+                color: $deep_green;
+                background-color: white;
+                cursor: pointer;
+              }
+            }
+          }
+          img{
+            height: $floor_height;
+            width: 100%;
+          }
+        }
+        .addimg{
+          height: $floor_height;
+          background-image: url("http://img.imooc.com/56fa1a4000016bae07500375.jpg");
+          //width: 100%;
+        }
+      }
